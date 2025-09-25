@@ -4,6 +4,9 @@
    e o peso da segunda nota é 3.
 '''
 
+#Programa para calcular média de uma disciplina no IFRN:
+
+
 disciplina = 'Programação de Computadores/IFRN,'
 
 aluna = 'Emilly Medeiros'
