@@ -6,4 +6,4 @@ dólar = float(input('Qual a cotação atual do dólar?'))
 
 resultado =  reais / dólar 
 
-print(f'O preço de um iPhone 16 em dólar custa cerca de US$ 6.7{resultado}.')
+print(f'O preço de um iPhone 16 em dólar custa cerca de US$ {resultado:.2f}.')

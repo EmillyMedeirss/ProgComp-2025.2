@@ -7,7 +7,7 @@
 #Programa para calcular média de uma disciplina no IFRN:
 
 
-disciplina = 'Programação de Computadores/IFRN,'
+disciplina = 'Programação de Computadores/IFRN'
 
 aluna = 'Emilly Medeiros'
 

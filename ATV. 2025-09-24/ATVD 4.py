@@ -1,8 +1,8 @@
 #Peça ao usuário a distância percorrida (em km) e o tempo gasto (em horas).
 #Calcule a velocidade média e exiba o resultado.
 
-distancia  = float(input('Qual a distância percorrida de Natal/RN à João Pessoa/PB?'))
-horas      = float(input('Levou quantas horas para essa distância ser percorrida?'))
+distancia  = float(input('Qual a distância percorrida em KM?'))
+horas      = float(input('Quanto tempo foi gasto em horas?'))
 
 velocidade = distancia / horas 
 
