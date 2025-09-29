@@ -8,6 +8,5 @@ valor_gorjeta = conta * (gorjeta / 100)
 
 total = conta + valor_gorjeta
 
-print(f"O valor da conta é R$ {conta:.2f}")
-print(f"A gorjeta é R$ {valor_gorjeta:.2f}")
+
 print(f"Total a pagar: R$ {total:.2f}")
