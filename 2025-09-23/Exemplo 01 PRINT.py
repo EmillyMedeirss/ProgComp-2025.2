@@ -18,4 +18,4 @@ print('Você nasceu em ' + str(ano_nascimento) + ' e tem ' + str(idade) + ' anos
 print(f'Você nasceu em {ano_nascimento} e tem {idade} anos.')
 
 
-#SEGUNDA AULA DE PROGRAMAÇÃO
+#SEGUNDA AULA DE PROGRAMAÇÃO.
