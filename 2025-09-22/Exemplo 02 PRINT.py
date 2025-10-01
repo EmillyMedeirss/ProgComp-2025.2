@@ -1,6 +1,5 @@
 from email.policy import EmailPolicy
 
-
 print("Olá, mundo!")
 nome = 'Emilly'
 
