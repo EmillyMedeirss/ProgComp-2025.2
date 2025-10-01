@@ -13,8 +13,7 @@
 intNota1 = int(input('Informe a nota da ETAPA 1:'))
 intNota2 = int(input('Informe a nota da ETAPA 2:'))
 
-# Calculando a média ponderada e arrendondando 
-# para o inteiro mais próximo
+# Calculando a média ponderada e arrendondando para o inteiro mais próximo
 intMedia = round( (intNota1*2 + intNota2*3) / 5)
 
 # Mostrando as notas e a média
