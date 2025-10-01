@@ -9,6 +9,7 @@
    - Teste 4: Nota1 = 10 e Nota2 = 21
 '''
 
+
 # Informando as notas como números inteiros
 intNota1 = int(input('Informe a nota da ETAPA 1:'))
 intNota2 = int(input('Informe a nota da ETAPA 2:'))
