@@ -11,7 +11,7 @@ intNota2 = int(input('Informe a nota da ETAPA 2:'))
 
 #intMedia = int( (intNota1*2 + intNota2*3) / 5 )
 intMedia = round((intNota1*2 + intNota2*3) / 5)
-#intMedia = round((intNota1*2 + intNota2*3) / 5)    para arredondar um número flutuante 
+#intMedia = round((intNota1*2 + intNota2*3) / 5) para arredondar um número flutuante 
 
 print(f'Nota da Etapa 1: {intNota1}')
 print(f'Nota da Etapa 2: {intNota2}')
