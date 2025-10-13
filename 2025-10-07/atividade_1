@@ -27,7 +27,7 @@ fltValorB = float(input('Informe o valor B:'))
 fltValorC = float(input('Informe o valor C:'))
 
 if(fltValorA == 0):
-    sys.exit(f'A equação não é de segundo grau.')
+    sys.exit(f'O valor não pode ser zero. A equação não é de segundo grau.')
 
 fltDelta = fltValorB ** 2 -4 * fltValorA *fltValorC 
 

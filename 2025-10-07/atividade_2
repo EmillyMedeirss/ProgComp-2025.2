@@ -1,0 +1,30 @@
+'''
+Faça um programa que solicite ao usuário um número de até 4 dígitos inteiro positivo e exiba a soma dos seus algarismos.
+
+Exemplo: 2456 = 17 (2 + 4 + 5 + 6)
+'''
+import sys
+
+intValor = int(input(f'Informe um número inteiro, positivo, de até 4 dígitos:'))
+
+if(intValor >9999 or intValor <0):
+    sys.exit(f'ESTE NÚMERO NÃO É PERMITIDO. Informe um número inteiro, positivo, de até 4 dígitos.')
+
+
+a = intValor // 1000
+intValor2 = intValor % 1000
+
+b = intValor2 // 100
+intValor3 = intValor %100
+
+c = intValor3 // 10
+intValor4 = intValor % 10
+
+d = intValor4 // 1
+intValor 
+
+
+
+
+
+
