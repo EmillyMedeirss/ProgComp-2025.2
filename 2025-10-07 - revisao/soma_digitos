@@ -11,19 +11,21 @@ if(intValor >9999 or intValor <0):
     sys.exit(f'ESTE NÚMERO NÃO É PERMITIDO. Informe um número inteiro, positivo, de até 4 dígitos.')
 
 
-a = intValor // 1000
-intValor2 = intValor % 1000
+valor1= intValor // 1000
+a = intValor % 1000
 
-b = intValor2 // 100
-intValor3 = intValor %100
+valor2 = a // 100
+b = intValor %100
 
-c = intValor3 // 10
-intValor4 = intValor % 10
+valor3 = b // 10
+c = intValor % 10
 
-d = intValor4 // 1
-intValor 
+valor4 = c // 1
+d = intValor % 1
 
+soma = valor1 + valor2 + valor3 + valor4
 
+print(f'A soma de {intValor} é igual a {soma}.')
 
 
 
