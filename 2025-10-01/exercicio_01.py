@@ -21,7 +21,7 @@
 intValor1 = float(input('Informe o valor de x:'))
 intValor2 = float(input('Informe o valor de y:'))
 
-if (intValor1 >= 0 and intValor2>=0):
+if (intValor1 >0 and intValor2>0):
     print('O ponto se encontra no Quadrante 1')
 elif (intValor1 <0 and intValor2>0):
     print('O ponto se encontra no Quadrante 2')

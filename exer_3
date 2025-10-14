@@ -1,0 +1,8 @@
+intCorreta = 1234
+
+intSenha = int(input('Digite a senha'))
+
+if(intSenha == 1234):
+    print('Acesso Permitido.')
+else:
+    print('Senha incorreta. Tente novamente.')
