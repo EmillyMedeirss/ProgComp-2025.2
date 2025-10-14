@@ -1,0 +1,55 @@
+'''
+	Crie um programa em Python que calcule as raízes de uma equação do 2º grau.
+	
+	O programa deve:
+	
+		- Ler os valores de a, b e c como entrada;
+		
+		- Verificar se o valor de a é zero. Caso seja, a equação não será do 
+		  2º grau e o programa deve informar o usuário sobre isso e encerrar;
+		  
+		- Calcular o discriminante(delta) e, com base no valor de delta:
+			
+			- delta > 0 : a equação possui duas raízes reais distintas. 
+			  O programa deve calcular e exibir ambas as raízes;
+			  
+			- delta = 0 : a equação possui uma única raiz real. 
+			  O programa deve calcular e exibir a raiz única;
+			  
+			- delta < 0 : a equação não possui raízes reais. 
+			  O programa deve informar ao usuário que não existem raízes reais.
+			  
+'''
+import sys
+
+fltValorA = float(input('Informe o valor A:'))
+fltValorB = float(input('Informe o valor B:'))
+fltValorC = float(input('Informe o valor C:'))
+
+if(fltValorA == 0):
+    sys.exit(f'O valor não pode ser zero. A equação não é de segundo grau.')
+
+fltDelta = fltValorB ** 2 -4 * fltValorA *fltValorC 
+
+if(fltDelta >0):
+    fltRaiz1 = -fltValorB + fltDelta ** 0.5 /2*fltValorA 
+    fltRaiz2= -fltValorB - fltDelta ** 0.5 /2*fltValorA
+    print(f'Raiz de X1:{fltRaiz1:.2f}\nRaiz de X2:{fltRaiz2:.2f}')
+elif(fltDelta==0):
+    intRaiz1 = -fltValorB + fltDelta ** 0.5 /2*fltValorA 
+    print(f'Raiz de X1: {intRaiz1}')
+else:
+    print('A equação não possui raízes reais.')
+
+
+
+
+
+
+
+
+
+
+
+
+
