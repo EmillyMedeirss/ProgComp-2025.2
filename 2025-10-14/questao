@@ -42,8 +42,20 @@ except ValueError:
 except Exception as strERRO:
     sys.exit(f'ERRO: {strERRO}')
 else:
-   if fltLadoA + fltLadoB <=fltLadoC:
-       sys.exit(f'INVÁLIDO! Não é possível formar um triângulo com esses lados.')
+    if fltLadoA + fltLadoB <=fltLadoC:
+     sys.exit(f'INVÁLIDO! Não é possível formar um triângulo com esses lados.')
+
+if fltLadoA == fltLadoB and fltLadoB == fltLadoC:
+   print('equilatero')
+elif fltLadoA == fltLadoB or fltLadoA == fltLadoC or fltLadoB == fltLadoC:
+   print('isóceles')
+else:
+   print('escaleno')
+   
+
+
+
+
 
        
 
