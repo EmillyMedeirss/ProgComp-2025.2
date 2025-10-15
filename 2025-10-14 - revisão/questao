@@ -69,3 +69,4 @@ elif fltAngA ==90 or fltAngB ==90 or fltAngC ==90:
 else:
       print('Classificação quanto aos ângulos: AGUDO.')
 
+
