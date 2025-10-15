@@ -45,6 +45,7 @@ else:
    if fltLadoA + fltLadoB <=fltLadoC:
        sys.exit(f'INVÁLIDO! Não é possível formar um triângulo com esses lados.')
 
+
        
 
 
