@@ -35,33 +35,37 @@ import math
 
 try:
    fltLadoA = float(input('Informe o comprimento do lado A do triângulo:'))
-   fltLadoB = float(input('Informe o comprimento do lado B do triânuglo:'))
+   fltLadoB = float(input('Informe o comprimento do lado B do triângulo:'))
    fltLadoC = float(input('Informe o comprimento do lado C do triângulo:'))
 except ValueError:
     sys.exit('ERRO: você deve informar apenas valores númericos.')
 except Exception as strERRO:
     sys.exit(f'ERRO: {strERRO}')
 else:
-    if fltLadoA + fltLadoB <=fltLadoC:
-     sys.exit(f'INVÁLIDO! Não é possível formar um triângulo com esses lados.')
+    if fltLadoA + fltLadoB <=fltLadoC: 
+     sys.exit(f'INVÁLIDO! Não é possível formar um triângulo com esses comprimentos.')
+
+RAD_a = math.acos((fltLadoB**2 + fltLadoC**2 - fltLadoA**2) / (2 * fltLadoB * fltLadoC))
+RAD_b = math.acos((fltLadoA**2 + fltLadoC**2 - fltLadoB **2) / (2 * fltLadoA * fltLadoC))
+RAD_c = math.acos ((fltLadoA**2 + fltLadoB**2 - fltLadoC**2) / (2 * fltLadoA * fltLadoB))
+
+fltAngA = math.degrees (RAD_a)
+fltAngB = math.degrees (RAD_b)
+fltAngC = math.degrees (RAD_c)
+
+print(f'Valores dos ângulos do triângulo: {fltAngA:.2f}, {fltAngB:.2f}, {fltAngC:.2f}.')
 
 if fltLadoA == fltLadoB and fltLadoB == fltLadoC:
-   print('equilatero')
+   print('Classificação quanto aos lados: EQUILÁTERO.')
 elif fltLadoA == fltLadoB or fltLadoA == fltLadoC or fltLadoB == fltLadoC:
-   print('isóceles')
+   print('Classificação quanto aos lados: ISÓCELES.')
 else:
-   print('escaleno')
-   
+   print('Classificação quanto aos lados: ESCALENO.')
 
-
-
-
-
-       
-
-
-
-    
-
-
+if fltAngA >90 or fltAngB >90 or fltAngC >90:
+      print('Classificação quanto aos ângulos: OBTUSO.')
+elif fltAngA ==90 or fltAngB ==90 or fltAngC ==90:
+      print('Classificação quanto aos ângulos: RETÂNGULO.')
+else:
+      print('Classificação quanto aos ângulos: AGUDO.')
 
