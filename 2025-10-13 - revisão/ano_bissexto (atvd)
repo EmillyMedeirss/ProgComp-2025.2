@@ -25,6 +25,8 @@ except ValueError:
 except Exception as strERRO:
     sys.exit (f'ERRO: {strERRO}')
 else:
+    if intANO <=0:
+        sys.exit('ERRO: O ano deve ser maior que zero.')
     if (intANO % 4 == 0 and intANO % 100 != 0) or (intANO % 400 ==0):
         print(f'O ano {intANO} é bissexto.')
     else:

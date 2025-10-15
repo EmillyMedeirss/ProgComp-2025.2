@@ -1,8 +1,0 @@
-fltTemp = float(input('Informe a temperatura'))
-
-fltFahr = (fltTemp * 9/5) + 32
-
-if (fltFahr >85.5):
-    print('Está um dia bem quente.')
-else:
-    print('A temperatura está agradável.') 
