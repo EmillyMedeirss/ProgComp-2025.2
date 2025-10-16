@@ -35,22 +35,42 @@ import math
 
 try:
    fltLadoA = float(input('Informe o comprimento do lado A do triângulo:'))
-   fltLadoB = float(input('Informe o comprimento do lado B do triânuglo:'))
+   fltLadoB = float(input('Informe o comprimento do lado B do triângulo:'))
    fltLadoC = float(input('Informe o comprimento do lado C do triângulo:'))
 except ValueError:
     sys.exit('ERRO: você deve informar apenas valores númericos.')
 except Exception as strERRO:
-    sys.exit(f'ERRO: {strERRO}')
+    sys.exit(f'ERRO INESPERADO: {strERRO}')
 else:
-   if fltLadoA + fltLadoB <=fltLadoC:
-       sys.exit(f'INVÁLIDO! Não é possível formar um triângulo com esses lados.')
-
-
-       
-
-
-
+   if fltLadoA <= 0 or fltLadoB <= 0 or fltLadoC <= 0:
+    sys.exit('ERRO: Os lados do triângulo devem ser números positivos.')
     
+   if (fltLadoA + fltLadoB <=fltLadoC) or (fltLadoA + fltLadoC <= fltLadoB) or (fltLadoB + fltLadoC <= fltLadoA):
+     sys.exit(f'INVÁLIDO! Não é possível formar um triângulo com esses comprimentos.')
 
+RAD_a = math.acos((fltLadoB**2  + fltLadoC**2 - fltLadoA**2) / (2 * fltLadoB * fltLadoC))
+RAD_b = math.acos((fltLadoA**2  + fltLadoC**2 - fltLadoB **2) / (2 * fltLadoA * fltLadoC))
+
+fltAngA = round (math.degrees(RAD_a),5)
+fltAngB = round (math.degrees(RAD_b),5)
+
+# Calculando o ângulo C
+fltAngC = round( 180 - fltAngA - fltAngB, 3)
+
+print(f'Valores dos ângulos do triângulo: {fltAngA:.2f}, {fltAngB:.2f}, {fltAngC}.')
+
+if fltLadoA == fltLadoB and fltLadoB == fltLadoC:
+   print('Classificação quanto aos lados: EQUILÁTERO.')
+elif fltLadoA == fltLadoB or fltLadoA == fltLadoC or fltLadoB == fltLadoC:
+   print('Classificação quanto aos lados: ISÓCELES.')
+else:
+   print('Classificação quanto aos lados: ESCALENO.')
+
+if fltAngA >90 or fltAngB >90 or fltAngC >90:
+      print('Classificação quanto aos ângulos: OBTUSO.')
+elif fltAngA ==90 or fltAngB ==90 or fltAngC ==90:
+      print('Classificação quanto aos ângulos: RETÂNGULO.')
+else:
+      print('Classificação quanto aos ângulos: AGUDO.')
 
 
