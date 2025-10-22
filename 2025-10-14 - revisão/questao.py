@@ -72,5 +72,3 @@ elif fltAngA ==90 or fltAngB ==90 or fltAngC ==90:
       print('Classificação quanto aos ângulos: RETÂNGULO.')
 else:
       print('Classificação quanto aos ângulos: AGUDO.')
-
-
