@@ -1,0 +1,36 @@
+'''
+-LAÇO DE REPETIÇÃO-
+
+
+   Imagine que queiramos imprimir os números entre 1 um determinado número informado.
+
+   Como fazer?
+'''
+
+# Imprimindo de 1 a 10
+print('1')
+print('2')
+print('3')
+...
+print('10')
+
+# Imprimir de 1 a 10 e dizer se o número é  ímpar ou par
+print('1 é ímpar')
+print('2 é par')
+print('3 é ímpar')
+...
+print('10 é par')
+
+# --------------------------------------------------------------------------------
+
+intNumero = 1
+
+# Define que o bloco será repetido enquanto a variável
+# seja menor ou igual a 10
+while intNumero <=10:
+# Bloco que será repetido enquanto o valor seja <= 10
+    if (intNumero % 2) == 0:
+    print(f'{intNumero} é Par')
+    else:
+    print(f'{intNumero} é Ímpar')
+    intNumero += 1
