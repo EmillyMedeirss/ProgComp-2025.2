@@ -34,3 +34,23 @@ while intNumero <=10:
     else:
     print(f'{intNumero} é Ímpar')
     intNumero += 1
+
+'''
+   Contar de 1 a 100 e no final exibir a soma dos pares e a soma dos ímpares
+'''
+
+intContador = 1
+intSomaPar = 0
+intSomaImpar = 0
+
+while intContador <=100:
+   if (intContador % 2 == 0):
+      intSomaPar += intContador
+   else:
+      intSomaImpar += intContador
+   intContador += 1
+
+print(f'Somar par = {intSomaPar}')
+print(f'Soma impar = {intSomaImpar}')
+
+
