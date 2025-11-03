@@ -18,6 +18,14 @@ while intContador <= 100:
    # Incrementa o contador
    intContador += 1
 
+''' VERSÃO COM FOR '''
+for intContador in range (1, 101):
+   if intContador % 2 == 0:
+      intSomaPares += intContador
+   else:
+      intSomaImpares += intContador
+
+
 # Exibição dos resultados
 print(f'Soma dos números pares....: {intSomaPares}')
 print(f'Soma dos números ímpares .: {intSomaImpares}')
