@@ -28,6 +28,7 @@ intAuxiliar = intNumero
 '''
 
 ''' VERSÃO COM FOR '''
+
 intFatorial =1 
 for intAuxiliar in range(intNumero, 1, -1):
    intFatorial *= intAuxiliar
