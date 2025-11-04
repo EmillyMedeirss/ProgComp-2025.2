@@ -10,9 +10,11 @@
 
 import sys
 try:
-   intN = int(input('Digite um número inteiro'))
+   intN = int(input('Digite um número inteiro:'))
 except ValueError:
    sys.exit('ERRO: Por favor, digite um número inteiro...')
+except KeyboardInterrupt:
+   sys.exit('\nAVISO: CTRL+C pressionado pelo usuário...')
 except Exception as ERROR:
    sys.exit(f'ERRO: {ERROR}...')
 else:
@@ -23,7 +25,6 @@ intAnterior, intAtual = 0, 1
 
 intContador = 1
 while intContador <= intN:
- print(f'{intAtual}', end= ' ')
- intAnterior, intAtual = intAtual, intAnterior + intAtual
- intAnterior = intAtual 
- intContador += 1
+   print(f'{intAtual},', end=' ')
+   intAnterior, intAtual = intAtual, intAnterior + intAtual
+   intContador += 1
