@@ -1,0 +1,8 @@
+strSenha = '123Mudar'.lower    #lower guarda na memoria como minusculo e upper guarda como maiusculo
+
+strEntrada = input('Digite a senha:')
+
+if strEntrada == strSenha:
+    print('OK!!!')
+else:
+    print('ERRO!!')
