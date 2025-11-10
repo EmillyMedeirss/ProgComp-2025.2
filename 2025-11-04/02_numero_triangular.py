@@ -16,3 +16,19 @@ except ValueError:
 except Exception as ERROR:
     sys.exit(f'ERRO INESPERADO: {ERROR}')
 
+if intN <1:
+    sys.exit(f'O número {intN} não é triangular.')
+
+intTriangular = 0
+intIncremento = 1
+
+#Calcula números triangulares até encontrar ou ultrapassar o número
+while intTriangular < intN:
+    intTriangular += intIncremento
+    intIncremento += 1
+
+#VERIFICA SE O NÚMERO É TRIANGULAR 
+if intTriangular == intN:
+    print(f'O número {intN} é triangular.')
+else:
+    print(f'O número {intN} não é triangular.')
