@@ -18,9 +18,16 @@ except Exception as ERROR:
     sys.exit(f'ERRO INESPERADO: {ERROR}')
 else:
     if intN < 2:
-        sys.exit('Digite um valor inteiro maior do que 2.')
-    if (intN % 2 == 0) and (intN % intN == 0):
-      print(f'{intN} é um número primo!')
+        sys.exit(f'O número {intN} não é primo.')
+intDivisor = 1
+for intN in range (2, intN + 1):
+    if intN % intDivisor == 0:
+        intDivisor +=1
+    if intDivisor <2: break 
+
+
+    if intDivisor == 2:
+        print(f'{intN} é um número primo!')
     else:
       print(f'{intN} não é um número primo.')
 
