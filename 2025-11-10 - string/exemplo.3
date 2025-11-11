@@ -7,3 +7,15 @@
 *****
 
 usando while e usando for '''
+
+#com while
+intPos = 5 # Tamanho maximo de caracters
+i = 1 # Inicializamos nosso contador de linhas.
+while i <= intPos: # O loop continua REPETINDO enquanto 'i' for menor ou igual a 5.
+    print('*' * i) 
+    i += 1 #ESSENCIAL: Aumentamos 'i' em 1 para que o padrão avance e para garantir que o loop pare quando 'i' chegar a 6.
+
+#com for 
+intPos = 5 # Tamanho maximo de caracters
+for i in range (1, intPos +1): # O 'for' irá contar de 1 até o tamanho maximo (5). Range(1, 6) gera os números 1, 2, 3, 4 e 5.
+    print('*' * i) # Imprime a string '*' multiplicada pelo valor atual de 'i'.
