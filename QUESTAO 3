@@ -1,0 +1,15 @@
+import zlib
+
+opcao = input('Deseja comprimir ou descomprimir (C/D)?').strip().upper()
+opcao2 = input('Qual a string para realizar a operação?')
+
+if opcao == 'Comprimir':
+    comprimindo = zlib.compress(opcao)
+    print(f'{comprimindo}')
+elif opcao == 'descomprimindo':
+    descomprimindo = zlib.decompress(opcao)
+    print(f'{comprimindo}')
+    
+    
+comprimindodo = zlib.compress(opcao)
+descomprimindo = zlib.decompress(opcao2)
