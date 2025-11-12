@@ -1,0 +1,18 @@
+import sys 
+
+
+strTexto = input('Digite uma palavra:')
+
+#Se houver mais de uma palavra, sair do programa
+for letra in strTexto:
+    if ' ' in strTexto:
+     sys.exit('Você digitou mais de uma palavra.')
+
+#Inverter a palavra e exibi-la
+strTextoInvertido = strTexto [::-1]
+print (strTexto)
+print(strTextoInvertido)
+if strTexto.lower() == strTextoInvertido.lower():
+    print('Palíndromos')
+else:
+    print('Não palíndromos')
