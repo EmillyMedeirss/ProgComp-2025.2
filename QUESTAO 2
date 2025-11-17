@@ -1,4 +1,4 @@
-qntMurilos = 0 # Variável de controle: Armazena a MAIOR quantidade de murilos encontrada (Recorde global).
+qntMurilos = 0
 numero1 = 0 # Variável de controle: Armazena o número 'n' que gerou o recorde de murilos.
 
 for n in range (1, 1001): # INÍCIO do laço principal. 'n' representa o número principal (de 1 a 10000)
