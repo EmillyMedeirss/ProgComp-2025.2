@@ -31,8 +31,26 @@ print(lstValores)
 
 # Exibir a soma dos valores na lista
 
+intSoma = 0
+
+for i in lstValores: 
+    intSoma += i 
+print(intSoma)
+
 # Exibir a média dos valores na lista
+
+fltMedia = intSoma/len(lstValores)
 
 # Exibir o maior valor na lista e sua posição
 
 # Exibir o menor valor na lista e sua posição
+
+intMenor = lstValores [0]
+
+for i in lstValores:
+   #if i <intMaior:
+      intMenor = i
+
+intIndice = lstValores.index(intMenor)
+print(f'Maior valor = {intMenor}')
+print(f'Posição = {intIndice}')
