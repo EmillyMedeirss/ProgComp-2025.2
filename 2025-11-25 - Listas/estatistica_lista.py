@@ -13,30 +13,28 @@
    - A variância dos valores na lista
    - O desvio padrão dos valores na lista
 '''
-import random 
 
-intQtValores = 20
-i = 0
-# ------------------------------------------------------------
-# Gerando a lista de valores únicos
-lstValores = list()
+#intQtValores = 20
+lstValores = [2, 9, 8, 5]
 
-while i <intQtValores:
-    x = random.randint (1, 100)
-    if x not in lstValores:
-        lstValores.append(x)
-        i+= 1
-print (lstValores)
+#MEDIA
+media = sum(lstValores)/len(lstValores)
 
+#MEDIANA 
 
-intSoma = sum(lstValores)
-print(f'Soma dos valores.......{intSoma}')
+lstOrdenada = sorted(lstValores)
+if len (lstValores) % 2 != 0:
+    mediana = lstValores[len(lstValores//2)]
+else:
+    mediana = (lstValores[len(lstValores)//2-1] + lstValores [len(lstValores)//2])/2
 
-fltMedia = intSoma/len(lstValores)
-print(f'Média dos valores.......:{fltMedia:.2f}')
+print(mediana)
 
-intMaior = max(lstValores)
-print(f'Maior valor........:{intMaior}')
+#Variância
 
-intMenor = min(lstValores)
-print(f'Menor valor..........: {intMenor}')
+fltVariancia = 0
+for valor in lstValores:
+    fltVariancia += (valor-media)**2
+fltVariancia /= len(lstValores)
+
+print(fltVariancia)
