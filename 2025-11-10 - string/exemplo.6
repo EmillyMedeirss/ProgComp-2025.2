@@ -9,9 +9,11 @@ for letra in strTexto:
      sys.exit('Você digitou mais de uma palavra.')
 
 #Inverter a palavra e exibi-la
-strTextoInvertido = strTexto [::-1]
-print (strTexto)
-print(strTextoInvertido)
+strTextoInvertido = ''
+for letra in strTexto: 
+    strTextoInvertido = letra+strTexto
+ print (strTexto)
+ print(strTextoInvertido)
 if strTexto.lower() == strTextoInvertido.lower():
     print('Palíndromos')
 else:
