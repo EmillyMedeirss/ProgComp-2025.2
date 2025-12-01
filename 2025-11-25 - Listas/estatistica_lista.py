@@ -38,3 +38,6 @@ for valor in lstValores:
 fltVariancia /= len(lstValores)
 
 print(fltVariancia)
+
+#DesvioPadrao
+
