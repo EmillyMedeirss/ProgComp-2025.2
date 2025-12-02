@@ -25,4 +25,39 @@
       Ana Costa              85         90         88
       Lucas Pereira          70         75         73
       --------------------------------------------------
+<<<<<<< HEAD
 '''
+
+
+lstNomes = []
+lstNotas1 = []
+lstNotas2 = []
+lstMedia = []
+alunos = 5
+
+print(f"--- Entrada de Dados para {alunos} Alunos ---")
+
+for i in range(alunos):
+    nome = input(f"Digite o nome do {i+1}º aluno: ")
+    lstNomes.append(nome)  
+
+    while True:
+        try:
+            nota1 = float(input(f"Digite a nota da Etapa 1 de {nome}: "))
+            if 0 <= nota1 <= 100: 
+                lstNotas1.append(nota1)
+                break 
+            else:
+                print("Nota inválida. Digite um valor entre 0 e 100.")
+        except ValueError:
+            print("Entrada inválida. Digite um número.")
+    while True:
+        try:
+            nota2 = float(input(f"Digite a nota da Etapa 2 de {nome} (0 a 100): "))
+            if 0 <= nota2 <= 100: 
+                lstNotas2.append(nota2)
+                break 
+            else:
+                print("Nota inválida. Digite um valor entre 0 e 100.")
+        except ValueError:
+            print("Entrada inválida. Digite um número.")
