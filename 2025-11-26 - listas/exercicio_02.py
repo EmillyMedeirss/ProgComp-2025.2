@@ -50,4 +50,13 @@ for i in range(alunos):
                 print("Nota inválida. Digite um valor entre 0 e 100.")
         except ValueError:
             print("Entrada inválida. Digite um número.")
-            
+    while True:
+        try:
+            nota2 = float(input(f"Digite a nota da Etapa 2 de {nome} (0 a 100): "))
+            if 0 <= nota2 <= 100: 
+                lstNotas2.append(nota2)
+                break 
+            else:
+                print("Nota inválida. Digite um valor entre 0 e 100.")
+        except ValueError:
+            print("Entrada inválida. Digite um número.")
