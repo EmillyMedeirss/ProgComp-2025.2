@@ -29,7 +29,13 @@ while True:
     except ValueError:
         print("Entrada inválida. Digite apenas números inteiros.")
 
-lstPrincipal = []
-subLst = [1,1]
+lstLista = [[1,1]]
+intSubLista = []
+for _ in range(1, QtSubLst):
+  lstSubLista = [1]
+  for j in range(len(lstLista[-1] -1)):
+    intSoma = lstLista [-1][j]+lstLista[-1][j+1]
+    lstSubLista.append(intSoma)
 
-
+intSubLista.append(1)
+lstLista.append(lstSubLista)

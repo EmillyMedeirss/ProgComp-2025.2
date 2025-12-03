@@ -17,19 +17,22 @@
       [1, 1, 2, 3, 5]
       [1, 1, 2, 3, 5, 8]
 '''
+import sys
 
 while True:
     try:
-        QtSubLst = int(input("Quantas sublistas você deseja gerar (mínimo 1)? "))
+        QtSubLst = int(input('Quantas sublistas você deseja gerar (mínimo 1)?' ))
         if QtSubLst >= 1:
             break
         else:
-            print("Por favor, digite um número inteiro maior ou igual a 1.")
+            print('Por favor, digite um número inteiro maior ou igual a 1.')
     except ValueError:
-        # Captura o erro se o usuário digitar algo que não é um número
-        print("Entrada inválida. Digite apenas números inteiros.")
+        sys.exit('Entrada inválida. Digite apenas números inteiros.')
+    except Exception as ERROR:
+        sys.exit(f'ERRO INESPERADO!!! {ERROR}')
 
-# 2. Inicializa a lista principal (chamada 'lista_principal')
+
+# Inicializa a lista principal
 # Ela deve começar obrigatoriamente com a sublista [1, 1]
 lstPrincipal = []
 subLst = [1,1]
